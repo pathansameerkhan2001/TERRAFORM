@@ -17,6 +17,7 @@ resource "aws_instance" "demo" {
   ami           = "ami-0caf778a172362f1c"
   instance_type = "t2.micro"
   associate_public_ip_address = true
+  key_name = "key_name"
 
   tags = {
     Name = "terraform-hands-on"
